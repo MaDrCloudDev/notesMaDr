@@ -31,7 +31,7 @@ button {
 }
 
 a {
-    color: #396684;
+    color: #338eef;
 }
 
 /* Container */
@@ -45,7 +45,7 @@ a {
 /* Header */
 
 .header {
-  background: #43799c;
+  background: #338eef;
   color: white;
   padding: 1.6rem 0;
 }
@@ -104,9 +104,9 @@ a {
 }
 
 .button {
-    background: #43799c;
+    background: #6a6c6e;
     border: none;
-    border-bottom: 2px solid #396684;
+    border-bottom: 2px solid black;
     color: white;
     font-size: 1.4rem;
     font-weight: 300;
@@ -115,16 +115,17 @@ a {
 }
 
 .button:hover {
-    background: #396684;
+    background: #fff000;
+    color: black;
 }
 
 .button--secondary {
     background: #888888;
-    border-bottom: 2px solid #717171;
+    border-bottom: 2px solid black;
 }
 
 .button--secondary:hover {
-    background: #6E6E6E;
+    background: #fff000;
 }
 
 /* Note editor */
