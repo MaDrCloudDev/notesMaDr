@@ -1,2 +1,2 @@
-# [my-notes-app](madrnotesapp.netlify.app)
-My Notes App
+# [my-notes-app](madrnotesapp.netlify.app) (desktop only)
+My notes app
