@@ -1,15 +1,3 @@
-/* Base Styles */
-
-/*
-
-BEM (block, element, modifier)
-
-Block     ->  house
-Element   ->  house__kitchen
-Modifier  ->  house--condo
-
-*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +5,7 @@ Modifier  ->  house--condo
 }
 
 html {
+    background-color: black;
   font-size: 62.5%;
 }
 
@@ -31,7 +20,12 @@ button {
 }
 
 a {
-    color: #338eef;
+    color: #90EE90;
+    font-size: 2rem;
+}
+
+a:hover {
+    color: #06ff06;
 }
 
 /* Container */
@@ -56,15 +50,15 @@ a {
 }
 
 .header__subtitle {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 /* Actions Bar */
 
 .actions {
-    background-color: #F7F7F7;
-    border-bottom: 1px solid #dedfe0;
+    background-color: #161c26;
+    border-bottom: 1px solid white;
     padding: .8rem
 }
 
@@ -104,28 +98,30 @@ a {
 }
 
 .button {
-    background: #6a6c6e;
+    background: #328eef;
     border: none;
     border-bottom: 2px solid black;
     color: white;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 500;
     padding: .8rem;
     transition: background .3s ease;
 }
 
 .button:hover {
-    background: #fff000;
+    background: #fffb00;
     color: black;
 }
 
 .button--secondary {
-    background: #888888;
+    background: #328eef;
     border-bottom: 2px solid black;
+    font-weight: 500;
 }
 
 .button--secondary:hover {
-    background: #fff000;
+    background: #D0342C;
+    color: white;
 }
 
 /* Note editor */
@@ -156,8 +152,8 @@ a {
 
 .list-item {
     text-decoration: none;
-    color: #333333;
-    background: #F7F7F7;
+    color: white;
+    background: #2e394a;
     border: 1px solid #dedfe0;
     margin: 1.6rem 0;
     padding: 1.6rem;
@@ -166,7 +162,8 @@ a {
 }
 
 .list-item:hover {
-    background: #eeeeee;
+    background: black;
+
 }
 
 .list-item__title {
@@ -175,7 +172,7 @@ a {
 }
 
 .list-item__subtitle {
-    color: #666;
+    color: #328eef;
     font-size: 1.4rem;
     font-weight: 300;
     font-style: italic;
@@ -184,4 +181,9 @@ a {
 .empty-message {
     text-align: center;
     margin: 3.2rem 0;
+    color: white;
+}
+
+#last-edited {
+    color: #fffb00;
 }
