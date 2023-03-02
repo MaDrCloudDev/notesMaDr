@@ -2,21 +2,22 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>notesApp | MaDr</title>
+        <title>notesMaDr | MaDr</title>
         <link rel="icon" type="image/svg" sizes="any" href="https://raw.githubusercontent.com/MaDrCloudDev/projectsImages/master/MaDrLogo.svg">
         <link href="/styles/styles.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
+    <body class="max-w-2xl mx-auto text-2xl text-white bg-black px-8 py-4">
         <header class="header">
-            <div class="container">
-                <h1 class="header__title">Notes MaDr</h1>
-                <h2 class="header__subtitle">Take notes. Never forget.</h2>
+            <div class="container mb-2">
+                <h1 class="header__title text-4xl text-[#328eef]">notesMaDr</h1>
+                <h2 class="header__subtitle text-3xl text-[#fffb00]">Take notes. Never forget.</h2>
             </div>
         </header>
         <div class="actions">
-            <div class="actions__container">
-                <input id="search-text" type="text" class="input" placeholder="Filter notes">
-                <select id="filter-by" class="dropdown">
+            <div class="actions__container mb-2">
+                <input id="search-text" type="text" class="input bg-black border" placeholder="Filter notes">
+                <select id="filter-by" class="dropdown bg-black border">
                     <option value="byEdited">Sort by last edited</option>
                     <option value="byCreated">Sort by recently created</option>
                     <option value="alphabetical">Sort alphabetically</option>
@@ -24,8 +25,8 @@
             </div>
         </div>
         <div class="container">
-            <div id="notes"></div>
-            <button id="create-note" class="button">New Note</button>
+            <div id="notes" class="mb-2"></div>
+            <button id="create-note" class="button border px-2 py-1 hover:text-[#fffb00] hover:border-[#fffb00]">New note</button>
         </div>    
         <script src="/scripts/index-bundle.js"></script>
     </body>
