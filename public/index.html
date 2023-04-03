@@ -8,25 +8,25 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="max-w-2xl mx-auto text-2xl text-white bg-black px-8 py-4">
-        <header class="header">
-            <div class="container mb-2">
-                <h1 class="header__title text-4xl text-[#328eef]">notesMaDr</h1>
-                <h2 class="header__subtitle text-3xl text-[#fffb00]">Take notes. Never forget.</h2>
+        <header>
+            <div class="mb-2">
+                <h1 class="text-5xl font-bold text-[#328eef]"><a href="/">notesMaDr</a></h1>
+                <h2 class="text-2xl text-[#fffb00]">Take notes. Never forget.</h2>
             </div>
         </header>
-        <div class="actions">
-            <div class="actions__container mb-2">
-                <input id="search-text" type="text" class="input bg-black border" placeholder="Filter notes">
-                <select id="filter-by" class="dropdown bg-black border">
+        <div>
+            <div class="mb-2">
+                <input id="search-text" type="text" class="bg-black border mb-2" placeholder="Filter notes">
+                <select id="filter-by" class="bg-black border">
                     <option value="byEdited">Sort by last edited</option>
                     <option value="byCreated">Sort by recently created</option>
                     <option value="alphabetical">Sort alphabetically</option>
                 </select>
             </div>
         </div>
-        <div class="container">
+        <div>
             <div id="notes" class="mb-2"></div>
-            <button id="create-note" class="button border px-2 py-1 hover:text-[#fffb00] hover:border-[#fffb00]">New note</button>
+            <button id="create-note" class="border px-2 py-1 hover:text-[#fffb00] hover:border-[#fffb00]">New note</button>
         </div>    
         <script src="/scripts/index-bundle.js"></script>
     </body>
