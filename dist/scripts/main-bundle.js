@@ -1,0 +1,1 @@
+import{r as t,c as a,s as r}from"./views-BljzMo1P.js";t();document.querySelector("#create-note").addEventListener("click",()=>{const e=a();location.assign(`/edit.html#${e}`)});document.querySelector("#search-text").addEventListener("input",e=>{r({searchText:e.target.value}),t()});document.querySelector("#filter-by").addEventListener("change",e=>{r({sortBy:e.target.value}),t()});

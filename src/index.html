@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notesMaDr | MaDr</title>
+    <link rel="icon" type="image/svg+xml" href="/MaDrLogo.svg" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-black text-white">
+    <div class="max-w-4xl mx-auto px-6 py-8">
+      <header class="text-center mb-12">
+        <h1 class="text-6xl font-bold text-[#328eef] mb-3 tracking-tight">
+          <a href="/" class="hover:opacity-80 transition-opacity">notesMaDr</a>
+        </h1>
+        <h2 class="text-xl text-[#fffb00] font-medium">
+          Take notes. Never forget.
+        </h2>
+      </header>
+
+      <main class="space-y-8">
+        <div
+          class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-gray-800"
+        >
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input
+              id="search-text"
+              type="text"
+              class="flex-1 bg-gray-800/60 border border-gray-700 text-white placeholder-gray-400 rounded-lg px-4 py-3 text-lg transition-all duration-200 focus:border-[#328eef] focus:outline-none focus:ring-2 focus:ring-[#328eef]/20"
+              placeholder="Filter notes..."
+            />
+            <select
+              id="filter-by"
+              class="bg-gray-800/60 border border-gray-700 text-white rounded-lg px-4 py-3 text-lg transition-all duration-200 focus:border-[#328eef] focus:outline-none min-w-[200px]"
+            >
+              <option value="byEdited">Sort by last edited</option>
+              <option value="byCreated">Sort by recently created</option>
+              <option value="alphabetical">Sort alphabetically</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div id="notes" class="space-y-4"></div>
+
+          <div class="text-center">
+            <button
+              id="create-note"
+              class="bg-gray-900/50 border border-gray-700 text-white px-8 py-4 rounded-xl text-lg font-medium transition-all duration-300 hover:border-[#fffb00] hover:text-[#fffb00] hover:bg-gray-800/50 hover:shadow-lg hover:shadow-[#fffb00]/10 active:scale-95"
+            >
+              Create New Note
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/scripts/index.js"></script>
+  </body>
+</html>
